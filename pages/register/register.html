@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ثبت نام</title>
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/register.css">
+</head>
+<body>
+    <div id="sabnam">
+
+        <form action="checkreg.php" method="post">
+            <fieldset>
+                <legend>اطلاعات شخصی</legend>
+            <input type="text" name="fname" placeholder="نام" required>
+            <br> <br>
+            <input type="text" name="lname" placeholder="نام خانوادگی">
+            <br><br>
+            <input type="email" name="mail" placeholder="ex@gmail.com">
+            <br><br>
+            <input type="text" name="stuid" placeholder=" شماره دانشجویی">
+            <br>
+            </fieldset>
+            <fieldset>
+            <legend>حساب کاربری</legend>
+            <input type="text" name="useracc" placeholder="نام کاربری">
+            <br><br>
+            <input type="password" name="pass" placeholder="رمزعبور ">
+            <br><br>
+            <input type="password" name="pass2" placeholder="تکرار رمز عبور ">
+            <br>
+            </fieldset>
+            <br>
+            <input type="submit" name="submit" value="ثبت اطلاعات">
+            <input type="reset" value="پاک کردن">
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+body {
+  direction: rtl;
+  font-family: iransans;
+}
+/* **** header Styles ***** */
+header {
+  width: 1024px;
+  margin: 80px auto 0;
+}
+
+#topTiter {
+  color: rgb(49, 49, 221);
+}
+#topHeader img {
+  width: 1024px;
+}
+/* **** Navigation Bar Styles ***** */
+#Navbar {
+  background-color: #333;
+  height: 70px;
+}
+#menuItem ul {
+  list-style-type: none;
+}
+
+#menuItem ul li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+#menuItem ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#menuItem ul li a:hover {
+  font-size: 20px;
+  color: #22a7f0;
+}
+
+.stickyNavbar {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  z-index: 101;
+}
+/* ***** Styles for sub menu ****** */
+.subItem {
+  background-color: #444;
+  display: none;
+}
+.subItem ul {
+  list-style-type: none;
+}
+.subItem1 ul {
+  margin-right: 120px;
+}
+.subItem2 ul {
+  margin-right: 230px;
+}
+.subItem3 ul {
+  margin-right: 320px;
+}
+
+.subItem ul li a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+.subItem ul li a:hover {
+  font-size: 18px;
+  color: #22a7f0;
+}
+/* **** Main Content Styles **** */
+#mainContent {
+  width: 1024px;
+  margin: 0 auto 0;
+  background-color: aquamarine;
+}
+#rightPanel {
+  background-color: #aa76c0;
+  width: 250px;
+  height: 500px;
+  float: right;
+  margin-bottom: 10px;
+  padding-right: 15px;
+}
+#rightPanel a{
+  color: white;
+  text-decoration: none;
+}
+#rightPanel a:hover{
+  color: yellow;
+  font-size: 20px;
+}
+#mainPanel {
+  background-color: #5589ac;
+  width: 720px;
+  height: 500px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+/* **** Footer Styles **** */
+footer {
+  width: 1024px;
+  clear: both;
+  background-color: #333;
+  margin: 0 auto 0;
+  color: white;
+  font-family: "iransans-light";
+}
+#rightSide{
+  width: 450px;
+  float: right;
+}
+#rightSide p a ,h3{
+  color: white;
+  text-decoration: none;
+  margin-right: 40px;
+}
+#rightSide p a:hover{
+  font-size: 18px;
+  color: #22a7f0;
+}
+#leftSide{
+  width: 450px;
+  float: left;
+}
+#copyLeft{
+  clear: both;
+}
+footer p {
+  font-size: 18px;
+}
+#googleMap {
+  margin-right: 15px;
+}
+#socialIcons {
+  margin-right: 15px;
+}
+#socialIcons a {
+  color: white;
+}
+
+#copyLeft p {
+  font-size: 14px;
+  margin-right: 15px;
+  text-align: center;
+  
+}
+/* ***** To Top Button Styles ***** */
+#toTop {
+  position: fixed;
+  bottom: 10px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 100;
+  display: none;
+}
+/* ***** Responsive code style for Mobile Phones ***** */
+@media screen and (max-width: 576px) {
+  header,
+  #Navbar,
+  #mainContent,
+  #rightPanel,
+  #mainPanel,
+  footer {
+    width: 100%;
+  }
+  #topHeader img {
+    width: 100%;
+  }
+}
