@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
         
         $captcha=$_POST['g-recaptcha-response'];
   
-        $response=json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LfXOKQUAAAAAN8KLvdoWCErWQgNs-N4D21DZokH&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
+        $response=json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=???&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
         if($response['success'] == false)
         {   
             $_SESSION['err_login']="You are spammer!";
